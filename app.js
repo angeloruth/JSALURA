@@ -1,4 +1,3 @@
-
 alert('Boas vindas ao numero secreto');
 let numeroSecreto = 6;
 console.log(numeroSecreto);
@@ -21,4 +20,9 @@ while (chute != numeroSecreto) {
     }   //tentativas = tentativas + 1;
         tentativas++;
 }
-alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+
+if (tentativas > 1) {
+    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+} else {
+    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
+}
